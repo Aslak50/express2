@@ -1,0 +1,6 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/**/node_modules", "**/*.test.*"],
+  "watch": ["src/back/"],
+  "ext": "js,json,ts"
+}
