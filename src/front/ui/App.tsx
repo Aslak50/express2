@@ -8,9 +8,11 @@ export function App(): JSX.Element {
     <>
       <BrowserRouter>
         <NavBar />
-        <Routes>
-          <Route path="/filter" element={<Filter />} />
-        </Routes>
+        <div style={{ paddingLeft: '10rem', paddingRight: '10rem', marginTop: '10px' }}>
+          <Routes>
+            <Route path="/filter" element={<Filter />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   )

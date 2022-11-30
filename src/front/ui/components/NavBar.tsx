@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom'
 
 export function NavBar(): JSX.Element {
   return (
-      <Navbar>
+    <Navbar>
       <NavbarGroup>
         <NavLink to="/">ACCEUIL</NavLink>
         <NavbarDivider />
         <NavLink to="/filter">Requête PIM</NavLink>
-        </NavbarGroup>
-      </Navbar>
+      </NavbarGroup>
+    </Navbar>
   )
 }

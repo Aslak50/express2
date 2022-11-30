@@ -6,7 +6,7 @@ export function getFilter(req: Request, res: Response) {
 
   let resp: string
   if (skus) {
-    resp = makeFilter(skus?.split(','))
+    resp = makeFilter(skus)
   } else {
     resp = 'NOOOOO'
   }

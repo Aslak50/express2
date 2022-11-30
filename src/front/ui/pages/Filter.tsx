@@ -11,17 +11,12 @@ export function Filter(): JSX.Element {
   return (
     <>
       <form>
-        <FormGroup label="tape tes skus séparés par une virgule">
-          <TextArea
-          fill
-          rows={10}
-            id="filter"
-            value={codes}
-            onChange={(e) => setCodes(e.target.value)}
-          />
+        <FormGroup label="Tape tes skus séparés par une virgule, espace ou saut de ligne">
+          <TextArea fill rows={10} id="filter" value={codes} onChange={(e) => setCodes(e.target.value)} />
         </FormGroup>
       </form>
-      <div>Requête : {filter}</div>
+      <span>Requête :</span>
+      <div style={{ overflowY: 'scroll', paddingTop: '7px' }}>{filter}</div>
     </>
   )
 }
